@@ -1,0 +1,168 @@
+export const metadata = {
+  title: "Building SmartPyLogger: My First Major Hackathon Victory",
+  description:
+    "The complete story of how three developers built SmartPyLogger in under two weeks during the AWS x Couchbase x Cillers hackathon - from team formation to shipping a production-ready FastAPI logging tool.",
+  alternates: {
+    canonical: "/blog/building-smartpylogger-hackathon-story",
+  },
+};
+
+<Cover
+  src="/projects/smartpylogger.png"
+  alt="SmartPyLogger - FastAPI logging tool with AI analysis"
+  caption="SmartPyLogger: The FastAPI logging tool we built in under two weeks"
+/>
+
+# Building SmartPyLogger at a hackathon
+
+SmartPyLogger was built in just under two weeks of focused execution during the June–July 2025 AWS x Couchbase x Cillers hackathon. This is the complete story of how three developers came together to build something real, something useful, and something that actually works.
+
+---
+
+## PRELUDE: How the Team Came Together
+
+It all started when I reached out to Niklavs Visockis about a KTH Innovation event. What began as a simple networking conversation quickly turned into something more when I showed him my personal website. The design and smoothness caught his attention, and when the AWS x Couchbase x Cillers hackathon opportunity came up, he knew exactly who to call.
+
+Niklavs and Jonas Lorenz had just wrapped an internal demo for Twiga AI, implementing graphRAG using Neo4j. They'd spent hours talking about goals, build philosophies, and future paths. When Couchbase hit Niklavs' inbox, he immediately reached out: "JOIN QUICK APPLY APPLY NOWWWWW".
+
+But they needed a frontend developer. Someone who could handle the UI/UX side while they tackled the backend and ML components. That's where I came in. As a JavaScript developer with a passion for clean, intuitive interfaces, I was the missing piece they needed.
+
+With that, our three-person team was complete: Niklavs and Jonas bringing backend/ML expertise, and me handling the frontend experience.
+
+---
+
+## THE IDEA: Building for Developers, Not Another SaaS
+
+People keep saying it: "Use-case over tech." But we love tech. So we decided to build something for developers like ourselves—not just another generic SaaS.
+
+We wanted this tool to be ridiculously simple. Minimal UI, no fluff, and real value for Python web developers.
+
+### The Core Concept
+
+Our vision was clear:
+
+- **FastAPI request logging** with complete request history
+- **AI-backed analysis** of requests and traffic sources (not just AI for the sake of it)
+- **CORS middleware functionality** with IP blocking and logging of disallowed addresses
+- **Smart filtering** and flagging of requests based on keywords or patterns
+
+### The Development Plan
+
+From a technical standpoint, we mapped out:
+
+- **Pip-installable package** that any developer could use instantly
+- **Custom backend** for flagging, filtering, and blocking dangerous traffic
+- **Clean, intuitive UI** where user flow took priority over feature scope
+- **Full product spine**: authentication, payments, database, logging—no placeholders
+
+We treated it like a microstartup. No pre-seed, no pre-launch, no staged rollout. It exists. It works. If someone wants to run it, they can.
+
+---
+
+## MY ROLE: Crafting the Frontend Experience
+
+As the frontend developer on the team, my responsibility was creating an interface that embodied our "no-fluff" philosophy. This meant:
+
+### Design Philosophy
+
+- **Developer-first mindset**: No fancy landing pages or marketing speak—just working code
+- **Minimal but functional**: Every element had to serve a purpose
+- **Intuitive navigation**: Developers should immediately understand how to use the tool
+- **Real-time insights**: Making logged data actionable and easy to interpret
+
+### Technology Stack
+
+For the frontend, I chose:
+
+- **Next.js** for the web application framework
+- **Tailwind CSS** for rapid, consistent styling
+- **TypeScript** for type safety and better developer experience
+- **Real-time updates** to display logging data as it happens
+
+### Key Features I Built
+
+1. **Dashboard Interface**: Clean visualization of request logs and AI analysis
+2. **Configuration Panel**: Simple setup for CORS rules and IP blocking
+3. **Alert System**: Visual flagging of suspicious traffic patterns
+4. **Integration Guide**: Clear documentation for the pip package installation
+
+---
+
+## THE BUILD: Learning and Shipping Fast
+
+We shipped fast and learned along the way. For me, this meant diving deeper into TypeScript and understanding how to integrate frontend interfaces with FastAPI backends.
+
+### Technical Challenges I Solved
+
+- **Real-time data display**: Implementing WebSocket connections to show live request logs
+- **Responsive design**: Ensuring the dashboard worked perfectly on all screen sizes
+- **Performance optimization**: Handling large volumes of log data without UI lag
+- **User experience flow**: Making complex filtering and analysis features feel simple
+
+### Late-Night Architecture Debates
+
+Some of my favorite moments were the deep-dive discussions with Niklavs and Jonas about how the frontend should interact with the backend. Questions like:
+
+- How should we display AI analysis results?
+- What's the most intuitive way to configure IP blocking rules?
+- How can we make the installation process foolproof?
+
+These conversations shaped not just the technical implementation, but the entire user experience.
+
+---
+
+## THE PHILOSOPHY: No Sales Funnel, Just Working Code
+
+What made this project special wasn't just the technology—it was our approach:
+
+- **No landing page**: The product speaks for itself
+- **No company structure**: Just three developers building something useful
+- **No staged rollout**: If you want to use it, fork it and deploy it
+- **No marketing fluff**: The code is the marketing
+
+This philosophy influenced every frontend decision I made. Instead of flashy animations or complex onboarding flows, I focused on clarity and immediate value.
+
+---
+
+## LESSONS LEARNED: Growing as a Developer
+
+This hackathon taught me invaluable lessons:
+
+### Technical Growth
+
+- **Full-stack thinking**: Understanding how frontend decisions impact backend performance
+- **Real-time applications**: Building responsive UIs that handle live data streams
+- **Developer tools**: Creating interfaces that other developers actually want to use
+
+### Collaboration Skills
+
+- **Cross-functional teamwork**: Working effectively with backend and ML specialists
+- **Rapid prototyping**: Balancing speed with quality in a time-constrained environment
+- **User-centric design**: Building for developers who think like us
+
+### Product Mindset
+
+- **MVP focus**: Identifying what features are truly essential
+- **No-fluff philosophy**: Prioritizing functionality over flashiness
+- **Developer empathy**: Building tools we'd want to use ourselves
+
+---
+
+## THE FINISH: Shipping Something Real
+
+We shipped fast. Learned Go and TypeScript along the way. Debated architecture choices deep into the night.
+
+It's not perfect. But it works, and it's ours!
+
+The final product is a testament to what three focused developers can accomplish in under two weeks:
+
+- **A production-ready pip package** that installs in seconds
+- **A clean, functional web interface** for monitoring and configuration
+- **AI-powered analysis** that actually provides value
+- **Real traffic filtering** that keeps applications secure
+
+Most importantly, we built something we're proud of—a tool that solves real problems for real developers.
+
+You can check out [SmartPyLogger](https://smartpylogger.vercel.app/) and see the complete project on [GitHub](https://github.com/Berget1411/Couchbase_Hack_25).
+
+---
