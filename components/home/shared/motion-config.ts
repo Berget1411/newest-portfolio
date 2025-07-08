@@ -9,27 +9,27 @@ export const VARIANTS_CONTAINER = {
 };
 
 export const VARIANTS_SECTION = {
-  hidden: { opacity: 0, y: 20, filter: "blur(8px)" },
+  hidden: { opacity: 0, y: 20, filter: "blur(4px)" },
   visible: {
     opacity: 1,
     y: 0,
     filter: "blur(0px)",
     transition: {
-      duration: 0.6,
+      duration: 0.4,
       ease: "easeOut",
     },
   },
 };
 
 export const TRANSITION_SECTION = {
-  duration: 0.6,
+  duration: 0.4,
   ease: "easeOut",
 };
 
 export const PROFESSIONAL_JOURNEY_VARIANTS = {
-  enter: { opacity: 0, y: -20, filter: "blur(4px)" },
+  enter: { opacity: 0, y: -20, filter: "blur(3px)" },
   center: { opacity: 1, y: 0, filter: "blur(0px)" },
-  exit: { opacity: 0, y: 20, filter: "blur(4px)" },
+  exit: { opacity: 0, y: 20, filter: "blur(3px)" },
 };
 
 export const PROFESSIONAL_JOURNEY_TRANSITION = {

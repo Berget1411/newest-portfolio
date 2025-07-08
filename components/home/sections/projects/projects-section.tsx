@@ -24,27 +24,27 @@ export function ProjectsSection() {
       <motion.div
         className="grid grid-cols-1 gap-6 sm:grid-cols-2"
         layout
-        transition={{ duration: 0.4, ease: "easeInOut" }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
       >
         {/* Always show featured projects */}
         {featuredProjects.map((project, index) => (
           <motion.div
             key={`${project.id}-${mounted}`}
             layout
-            initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
+            initial={{ opacity: 0, y: 15, filter: "blur(4px)" }}
             whileInView={{
               opacity: 1,
               y: 0,
               filter: "blur(0px)",
               transition: {
-                duration: 0.5,
-                delay: index * 0.1,
+                duration: 0.3,
+                delay: index * 0.05,
                 ease: "easeOut",
               },
             }}
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true, margin: "-30px" }}
             transition={{
-              layout: { duration: 0.4, ease: "easeInOut" },
+              layout: { duration: 0.3, ease: "easeInOut" },
             }}
             className="space-y-2"
           >
@@ -66,20 +66,20 @@ export function ProjectsSection() {
         {hasMoreProjects && (
           <motion.div
             layout
-            initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
+            initial={{ opacity: 0, y: 15, filter: "blur(4px)" }}
             whileInView={{
               opacity: 1,
               y: 0,
               filter: "blur(0px)",
               transition: {
-                duration: 0.5,
-                delay: featuredProjects.length * 0.1,
+                duration: 0.3,
+                delay: featuredProjects.length * 0.05,
                 ease: "easeOut",
               },
             }}
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true, margin: "-30px" }}
             transition={{
-              layout: { duration: 0.4, ease: "easeInOut" },
+              layout: { duration: 0.3, ease: "easeInOut" },
             }}
             className="space-y-2"
           >
@@ -137,28 +137,28 @@ export function ProjectsSection() {
               <motion.div
                 key={project.id}
                 layout
-                initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
+                initial={{ opacity: 0, y: 15, filter: "blur(4px)" }}
                 animate={{
                   opacity: 1,
                   y: 0,
                   filter: "blur(0px)",
                   transition: {
-                    duration: 0.5,
-                    delay: index * 0.1,
+                    duration: 0.3,
+                    delay: index * 0.05,
                     ease: "easeOut",
                   },
                 }}
                 exit={{
                   opacity: 0,
-                  y: -20,
-                  filter: "blur(8px)",
+                  y: -10,
+                  filter: "blur(4px)",
                   transition: {
-                    duration: 0.3,
+                    duration: 0.2,
                     ease: "easeIn",
                   },
                 }}
                 transition={{
-                  layout: { duration: 0.4, ease: "easeInOut" },
+                  layout: { duration: 0.3, ease: "easeInOut" },
                 }}
                 className="space-y-2"
               >

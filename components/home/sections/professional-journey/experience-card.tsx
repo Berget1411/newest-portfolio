@@ -36,13 +36,13 @@ export function ExperienceCard({ item, index = 0 }: ExperienceCardProps) {
   // Reset animation state when component mounts (for tab switches)
   useEffect(() => {
     setHasAnimated(false);
-    const timer = setTimeout(() => setHasAnimated(true), 100 + index * 100);
+    const timer = setTimeout(() => setHasAnimated(true), 50 + index * 50);
     return () => clearTimeout(timer);
   }, [index]);
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
+      initial={{ opacity: 0, y: 15, filter: "blur(4px)" }}
       animate={
         hasAnimated
           ? {
@@ -50,8 +50,8 @@ export function ExperienceCard({ item, index = 0 }: ExperienceCardProps) {
               y: 0,
               filter: "blur(0px)",
               transition: {
-                duration: 0.5,
-                delay: index * 0.1,
+                duration: 0.3,
+                delay: index * 0.05,
                 ease: "easeOut",
               },
             }
@@ -62,12 +62,12 @@ export function ExperienceCard({ item, index = 0 }: ExperienceCardProps) {
         y: 0,
         filter: "blur(0px)",
         transition: {
-          duration: 0.5,
-          delay: index * 0.1,
+          duration: 0.3,
+          delay: index * 0.05,
           ease: "easeOut",
         },
       }}
-      viewport={{ once: true, margin: "-50px" }}
+      viewport={{ once: true, margin: "-30px" }}
       onViewportEnter={() => setHasAnimated(true)}
     >
       <MorphingDialog
