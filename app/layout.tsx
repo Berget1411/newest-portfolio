@@ -21,6 +21,51 @@ export const metadata: Metadata = {
   },
   description:
     "Ludvig Bergström is a full-stack IT consultant and industrial engineering and management student with hands-on experience in software development, hackathons, and consulting. Passionate about computer science, artificial intelligence, finance, and management. Driven by curiosity, I enjoy tackling complex problems, delivering innovative solutions, and collaborating closely with others in dynamic, fast-paced environments.",
+  keywords: [
+    "full-stack developer",
+    "IT consultant",
+    "We Know IT",
+    "KTH AI Society",
+    "THS Business",
+    "artificial intelligence",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "finance",
+    "management",
+    "Industrial Engineering",
+    "hackathon winner",
+  ],
+  authors: [{ name: "Ludvig Bergström" }],
+  creator: "Ludvig Bergström",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://ludvigbergstrom.com",
+    title: "Ludvig Bergström | Full-Stack IT Consultant & Developer",
+    description:
+      "Full-Stack IT Consultant and Industrial Engineering and Management student with hands-on experience in software development, hackathons, and consulting. Passionate about computer science, artificial intelligence, finance, and management.",
+    siteName: "Ludvig Bergström Portfolio",
+    images: [
+      {
+        url: "https://ludvigbergstrom.com/portrait.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Ludvig Bergström - Full-Stack IT Consultant",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ludvig Bergström | Full-Stack IT Consultant & Developer",
+    description:
+      "Full-Stack IT Consultant and Industrial Engineering and Management student with hands-on experience in software development, hackathons, and consulting. Passionate about computer science, artificial intelligence, finance, and management.",
+    images: ["https://ludvigbergstrom.com/portrait.jpeg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const geist = Geist({
