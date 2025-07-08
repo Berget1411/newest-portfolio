@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronDownIcon, GridIcon } from "lucide-react";
 import { PROJECTS } from "@/lib/data";
@@ -9,9 +9,14 @@ import { ProjectCard } from "./project-video";
 
 export function ProjectsSection() {
   const [showAll, setShowAll] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const featuredProjects = PROJECTS.slice(0, 3);
   const additionalProjects = PROJECTS.slice(3);
   const hasMoreProjects = PROJECTS.length > 3;
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <AnimatedSection>
@@ -24,19 +29,20 @@ export function ProjectsSection() {
         {/* Always show featured projects */}
         {featuredProjects.map((project, index) => (
           <motion.div
-            key={project.id}
+            key={`${project.id}-${mounted}`}
             layout
-            initial={{ opacity: 0, scale: 0.9, y: 20 }}
-            animate={{
+            initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
+            whileInView={{
               opacity: 1,
-              scale: 1,
               y: 0,
+              filter: "blur(0px)",
               transition: {
-                duration: 0.4,
-                delay: index * 0.08,
+                duration: 0.5,
+                delay: index * 0.1,
                 ease: "easeOut",
               },
             }}
+            viewport={{ once: true, margin: "-50px" }}
             transition={{
               layout: { duration: 0.4, ease: "easeInOut" },
             }}
@@ -60,17 +66,18 @@ export function ProjectsSection() {
         {hasMoreProjects && (
           <motion.div
             layout
-            initial={{ opacity: 0, scale: 0.9, y: 20 }}
-            animate={{
+            initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
+            whileInView={{
               opacity: 1,
-              scale: 1,
               y: 0,
+              filter: "blur(0px)",
               transition: {
-                duration: 0.4,
-                delay: 0.3,
+                duration: 0.5,
+                delay: featuredProjects.length * 0.1,
                 ease: "easeOut",
               },
             }}
+            viewport={{ once: true, margin: "-50px" }}
             transition={{
               layout: { duration: 0.4, ease: "easeInOut" },
             }}
@@ -130,21 +137,21 @@ export function ProjectsSection() {
               <motion.div
                 key={project.id}
                 layout
-                initial={{ opacity: 0, scale: 0.9, y: 20 }}
+                initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
                 animate={{
                   opacity: 1,
-                  scale: 1,
                   y: 0,
+                  filter: "blur(0px)",
                   transition: {
-                    duration: 0.4,
-                    delay: index * 0.08,
+                    duration: 0.5,
+                    delay: index * 0.1,
                     ease: "easeOut",
                   },
                 }}
                 exit={{
                   opacity: 0,
-                  scale: 0.9,
                   y: -20,
+                  filter: "blur(8px)",
                   transition: {
                     duration: 0.3,
                     ease: "easeIn",

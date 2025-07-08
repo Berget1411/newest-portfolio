@@ -9,7 +9,7 @@ export function Header() {
     <motion.header
       className="mb-8 flex items-center gap-4"
       initial={{ opacity: 0, y: 20 }}
-      animate={{
+      whileInView={{
         opacity: 1,
         y: 0,
         transition: {
@@ -17,10 +17,11 @@ export function Header() {
           ease: "easeOut",
         },
       }}
+      viewport={{ once: true, margin: "-50px" }}
     >
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
-        animate={{
+        whileInView={{
           opacity: 1,
           scale: 1,
           transition: {
@@ -29,6 +30,7 @@ export function Header() {
             ease: "easeOut",
           },
         }}
+        viewport={{ once: true, margin: "-50px" }}
       >
         <Image
           src="/portrait.jpeg"
@@ -40,7 +42,7 @@ export function Header() {
       </motion.div>
       <motion.div
         initial={{ opacity: 0, x: -20 }}
-        animate={{
+        whileInView={{
           opacity: 1,
           x: 0,
           transition: {
@@ -49,6 +51,7 @@ export function Header() {
             ease: "easeOut",
           },
         }}
+        viewport={{ once: true, margin: "-50px" }}
       >
         <Link href="/" className="font-medium text-black dark:text-white">
           Ludvig Bergström

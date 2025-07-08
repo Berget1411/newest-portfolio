@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { TransitionPanel } from "@/components/ui/transition-panel";
 import { WORK_EXPERIENCE, EDUCATION, AWARDS } from "@/lib/data";
 import { AnimatedSection } from "../../shared/animated-section";
@@ -17,6 +17,11 @@ const EXPERIENCE_TABS = [
 
 export function ProfessionalJourneySection() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <AnimatedSection>
@@ -44,9 +49,17 @@ export function ProfessionalJourneySection() {
             variants={PROFESSIONAL_JOURNEY_VARIANTS}
           >
             {EXPERIENCE_TABS.map((tab, index) => (
-              <div key={index} className="flex flex-col space-y-2">
-                {tab.data.map((item) => (
-                  <ExperienceCard key={item.id} item={item} type={tab.type} />
+              <div
+                key={`${index}-${mounted}`}
+                className="flex flex-col space-y-2"
+              >
+                {tab.data.map((item, itemIndex) => (
+                  <ExperienceCard
+                    key={`${item.id}-${activeIndex}-${mounted}`}
+                    item={item}
+                    type={tab.type}
+                    index={itemIndex}
+                  />
                 ))}
               </div>
             ))}
