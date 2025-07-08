@@ -49,8 +49,6 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://ludvigbergstrom.com/portrait.jpeg",
-        width: 1200,
-        height: 630,
         alt: "Ludvig Bergström - Full-Stack IT Consultant",
       },
     ],
