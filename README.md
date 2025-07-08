@@ -1,40 +1,41 @@
-<img src="/public/cover.jpg" alt="Cover image representing Nim, a personal website template" width="100%" />
+# My portfolio
 
-Nim is a free and open-source personal website template built with Next.js 15, React 19, Tailwind CSS v4, and Motion. Designed for developers, designers, and founders, it combines minimalism with delightful animated components powered by [Motion-Primitives](https://motion-primitives.com).
+## Technologies Used
 
-Live demo: [https://nim-fawn.vercel.app](https://nim-fawn.vercel.app)
+This portfolio is built with modern web technologies focusing on performance, animations, and developer experience:
 
-## Features
+**Core Framework & Language:**
 
-- Minimal one-page portfolio layout.
-- Blog support with MDX.
-- Responsive and accessible design.
-- Easy to use
-- [Motion-Primitives](https://motion-primitives.com) for animated components.
+- **Next.js 15** - React framework with App Router for server-side rendering and optimized performance
+- **TypeScript** - Type-safe JavaScript for better development experience
+- **React 19** - Latest React version for building interactive user interfaces
 
-## Getting Started
+**Styling & Design:**
 
-For detailed setup instructions, refer to the [Installation Guide](./INSTALLATION.md).
+- **Tailwind CSS 4** - Utility-first CSS framework for rapid UI development
+- **Tailwind Typography** - Beautiful typography defaults for content-heavy pages
 
-```bash
-git clone https://github.com/ibelick/nim.git
-cd nim
-npm install
-npm run dev
-```
+**Content & Blogging:**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **MDX** - Markdown with JSX components for interactive blog posts and content
 
-## Contributing
+**Animations & Interactions:**
 
-Contributions are welcome! Feel free to open issues or submit pull requests to improve Nim.
+- **Motion** (formerly Framer Motion) - Smooth animations and micro-interactions
+- **Custom UI Components** - Magnetic buttons, morphing dialogs, text effects, and animated backgrounds
 
-## Deployment
+**Development Tools:**
 
-You can deploy your site to any hosting platform that supports Next.js. For the easiest deployment experience, consider using Vercel:
+- **ESLint & Prettier** - Code linting and formatting
+- **PostCSS** - CSS processing and optimization
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fibelick%2Fnim&env=NEXT_PUBLIC_SITE_URL&project-name=nim&repository-name=nim&redirect-url=https%3A%2F%2Ftwitter.com%2Fibelick&demo-title=Nim&demo-description=Nim%20is%20a%20free%20and%20open-source%20minimal%20personal%20website%20template%20built%20with%20Next.js%2015%2C%20React%2019%2C%20and%20Motion-Primitives.&demo-url=https%3A%2F%2Fnim.vercel.app&demo-image=https%3A%2F%2Fraw.githubusercontent.com%2Fibelick%2Fnim%2Frefs%2Fheads%2Fmain%2F.github%2Fassets%2Freadme.png&teamSlug=ibelick)
+**Analytics & Performance:**
 
-## About
+- **Vercel Analytics** - Website analytics and insights
+- **Vercel Speed Insights** - Performance monitoring
 
-Nim is designed to make personal branding effortless and beautiful. If you enjoy it, consider sharing it and exploring [Motion-Primitives Pro](https://pro.motion-primitives.com/).
+**Additional Features:**
+
+- **Next Themes** - Dark/light mode support
+- **Lucide React** - Beautiful icon library
+- **Sugar High** - Syntax highlighting for code blocks
