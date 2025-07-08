@@ -42,13 +42,12 @@ export function ExperienceCard({ item, index = 0 }: ExperienceCardProps) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 15, filter: "blur(4px)" }}
+      initial={{ opacity: 0, y: 15 }}
       animate={
         hasAnimated
           ? {
               opacity: 1,
               y: 0,
-              filter: "blur(0px)",
               transition: {
                 duration: 0.3,
                 delay: index * 0.05,
@@ -60,7 +59,6 @@ export function ExperienceCard({ item, index = 0 }: ExperienceCardProps) {
       whileInView={{
         opacity: 1,
         y: 0,
-        filter: "blur(0px)",
         transition: {
           duration: 0.3,
           delay: index * 0.05,

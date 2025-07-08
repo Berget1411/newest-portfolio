@@ -31,11 +31,10 @@ export function ProjectsSection() {
           <motion.div
             key={`${project.id}-${mounted}`}
             layout
-            initial={{ opacity: 0, y: 15, filter: "blur(4px)" }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{
               opacity: 1,
               y: 0,
-              filter: "blur(0px)",
               transition: {
                 duration: 0.3,
                 delay: index * 0.05,
@@ -66,11 +65,10 @@ export function ProjectsSection() {
         {hasMoreProjects && (
           <motion.div
             layout
-            initial={{ opacity: 0, y: 15, filter: "blur(4px)" }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{
               opacity: 1,
               y: 0,
-              filter: "blur(0px)",
               transition: {
                 duration: 0.3,
                 delay: featuredProjects.length * 0.05,
@@ -137,11 +135,10 @@ export function ProjectsSection() {
               <motion.div
                 key={project.id}
                 layout
-                initial={{ opacity: 0, y: 15, filter: "blur(4px)" }}
+                initial={{ opacity: 0, y: 15 }}
                 animate={{
                   opacity: 1,
                   y: 0,
-                  filter: "blur(0px)",
                   transition: {
                     duration: 0.3,
                     delay: index * 0.05,
@@ -151,7 +148,6 @@ export function ProjectsSection() {
                 exit={{
                   opacity: 0,
                   y: -10,
-                  filter: "blur(4px)",
                   transition: {
                     duration: 0.2,
                     ease: "easeIn",
