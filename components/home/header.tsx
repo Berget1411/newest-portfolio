@@ -63,7 +63,7 @@ export function Header() {
           className="text-zinc-600 dark:text-zinc-500"
           delay={0.8}
         >
-          Fullstack Developer, AI, Finance & Management
+          Fullstack Developer, Applied AI, Finance & Management
         </TextEffect>
       </motion.div>
     </motion.header>
