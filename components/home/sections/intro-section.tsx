@@ -40,9 +40,9 @@ export function IntroSection() {
             <AnimatedSection>
               <p className="text-zinc-600 dark:text-zinc-400">
                 Full-Stack Developer and Industrial Engineering student with
-                hands-on experience in software, hackathons, and consulting.
-                Passionate about AI, finance, and solving complex problems
-                through innovative, collaborative work.
+                hands-on experience in software, hackathons, and consulting. I
+                am passionate about Applied AI, finance, and solving complex
+                problems through innovative, collaborative work.
               </p>
             </AnimatedSection>
           )}

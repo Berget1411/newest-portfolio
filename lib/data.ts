@@ -328,6 +328,14 @@ export const SOCIAL_LINKS: SocialLink[] = [
     label: "LinkedIn",
     link: "https://www.linkedin.com/in/ludvig-bergstrom/",
   },
+  {
+    label: "Chess",
+    link: "https://www.chess.com/member/ludvig1411",
+  },
+  {
+    label: "Leetcode",
+    link: "https://leetcode.com/u/lzIRpJQQHb/",
+  },
 ];
 
 export const EMAIL = "lubergst@kth.se";
