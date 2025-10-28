@@ -2,6 +2,7 @@
 import { AnimatedSection } from "../shared/animated-section";
 import { TextShimmer } from "@/components/ui/text-shimmer";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export function IntroSection() {
   const [isGenerating, setIsGenerating] = useState(true);
@@ -39,10 +40,34 @@ export function IntroSection() {
           {showSummary && (
             <AnimatedSection>
               <p className="text-zinc-600 dark:text-zinc-400">
-                Full-Stack Developer and Industrial Engineering student with
-                hands-on experience in software, hackathons, and consulting. I
-                am passionate about Applied AI, finance, and solving complex
-                problems through innovative, collaborative work.
+                Full-stack and AI developer, and Industrial Engineering student.
+                I ship pragmatic, user-centric software with experience across
+                hackathons, consulting, and product work. I’m passionate about
+                applied AI and finance, turning complex problems into simple,
+                reliable systems. Currently exploring a modern{" "}
+                <Link
+                  href="https://www.better-t-stack.dev/new?name=test-deploy&fe-w=next&rt=workers&db=postgres&sd=wrangler&dbs=neon&pay=polar&ex=ai,todo&add=biome,husky,turborepo&wd=wrangler"
+                  target="_blank"
+                  className="text-purple-500"
+                >
+                  tech stack
+                </Link>{" "}
+                alongside AI tools like{" "}
+                <Link
+                  href="https://mastra.ai/"
+                  target="_blank"
+                  className="text-emerald-500"
+                >
+                  Mastra{" "}
+                </Link>
+                and{" "}
+                <Link
+                  href="https://ai-sdk.dev/"
+                  target="_blank"
+                  className="text-blue-500"
+                >
+                  Vercel AI SDK.
+                </Link>
               </p>
             </AnimatedSection>
           )}

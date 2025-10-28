@@ -55,6 +55,57 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
+    id: "new-notecards",
+    title: "New NoteCards",
+    image: "/projects/notecards.png",
+    github: "https://github.com/Berget1411/notecards",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Hono",
+      "tRPC",
+      "Cloudflare Workers",
+      "Drizzle ORM",
+      "PostgreSQL",
+      "Better-Auth",
+      "RAG and AI workflow with Vercel AI SDK",
+      "Turborepo",
+      "Biome",
+    ],
+    devMode: true,
+    shortDescription:
+      "AI-powered flashcard app with Notion integration, rebuilt with modern full-stack architecture",
+    longDescription:
+      "NoteCards is a comprehensive AI-powered flashcard application with seamless Notion integration, built using a modern monorepo architecture. The app leverages Next.js for the frontend with shadcn/ui components and Tailwind CSS for a polished UI. The backend utilizes Hono, a lightweight and performant server framework, with tRPC for end-to-end type-safe APIs. Data is managed through Drizzle ORM with PostgreSQL, while authentication is handled by Better-Auth. AI capabilities are powered by Mastra and Vercel AI SDK for intelligent flashcard generation. The project is optimized with Turborepo for efficient builds, uses Biome for linting and formatting, and is deployed on Cloudflare Workers for edge performance. Features include AI-driven flashcard creation, Notion workspace integration, and a developer-focused tech stack designed for scalability and type safety.",
+    date: "Current, 2025",
+  },
+  {
+    id: "tone",
+    title: "Tone",
+    image: "/projects/tone.png",
+    github: "https://github.com/NikVis01/Tone_AI_v2",
+    demo: "https://preview--sales-assist-glow.lovable.app/",
+    tech: [
+      "Next.js",
+      "Express.js",
+      "Socket.IO",
+      "TypeScript",
+      "Tailwind CSS",
+      "Google Cloud Speech-to-Text API",
+      "Bun",
+      "Prisma",
+      "PostgreSQL",
+    ],
+    devMode: false,
+    shortDescription:
+      "Real-time speech transcription sales copilot with AI-powered analysis",
+    longDescription:
+      "Tone is an ElevenLabs prize-winning sales copilot built in 20 hours for the Project Europe x Lovable x ElevenLabs hackathon. It features real-time speech-to-text conversion using Google Cloud Speech-to-Text API, live bidirectional communication via Socket.IO, and direct browser microphone integration with the MediaRecorder API. The application provides instant interim and final transcription results with a modern, intuitive interface built using Next.js and Tailwind CSS. The backend is powered by Express.js and Bun runtime, with PostgreSQL database management through Prisma ORM.",
+    date: "Jul 2025",
+  },
+  {
     id: "smartpylogger",
     title: "SmartPyLogger",
     image: "/projects/smartpylogger.png",
@@ -275,6 +326,34 @@ export const EDUCATION: Education[] = [
 ];
 
 export const AWARDS: Award[] = [
+  {
+    id: "project_europe_lovable_elevenlabs",
+    title:
+      "Started building Tone & won ElevenLabs prize at Project Europe hackathon",
+    undertitle: "Project Europe × Lovable × ElevenLabs",
+    desc1:
+      "Led backend development for Tone, an AI-powered sales copilot, using TypeScript. The project was built during a hackathon collaboration between Project Europe, Lovable, and ElevenLabs.",
+    date: "Jul 2025",
+    image: "/awards/tone.png",
+  },
+  {
+    id: "antler_kthais",
+    title: "Continued on Tone",
+    undertitle: "Antler VC x KTH AI Society",
+    desc1:
+      "Participated in a hackathon organized by Antler VC and KTH AI Society, developing Tone, an AI-powered solution.",
+    date: "Aug 2025",
+    image: "/awards/tone.png",
+  },
+  {
+    id: "nordic_software_summit",
+    title: "Continued on Tone",
+    undertitle: "Nordic Software Summit",
+    desc1:
+      "Participated in the Nordic Software Summit, working on Tone, an innovative AI project.",
+    date: " Aug 2025",
+    image: "/awards/tone.png",
+  },
   {
     id: "lovable_hackathon",
     title: "Lovable Hackathon Winner",
