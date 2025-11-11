@@ -40,11 +40,10 @@ export function IntroSection() {
           {showSummary && (
             <AnimatedSection>
               <p className="text-zinc-600 dark:text-zinc-400">
-                Full-stack and AI developer, and Industrial Engineering student.
-                I ship pragmatic, user-centric software with experience across
-                hackathons, consulting, and product work. I’m passionate about
-                applied AI and finance, turning complex problems into simple,
-                reliable systems. Currently exploring a modern{" "}
+                Full-stack and AI developer, and Industrial Engineering &
+                Management student at KTH. I&apos;m interested in software,
+                applied AI and finance, breaking down complex problems into
+                software solutions. Currently exploring a modern{" "}
                 <Link
                   href="https://www.better-t-stack.dev/new?name=test-deploy&fe-w=next&rt=workers&db=postgres&sd=wrangler&dbs=neon&pay=polar&ex=ai,todo&add=biome,husky,turborepo&wd=wrangler"
                   target="_blank"
