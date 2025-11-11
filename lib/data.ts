@@ -55,6 +55,18 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
+    id: "ais",
+    title: "AI Society Website",
+    image: "/projects/ai-society-website.png",
+    github: "https://github.com/Berget1411/ais",
+    demo: "https://ais-eta.vercel.app/",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+    devMode: false,
+    shortDescription: "Central website for all AI Societies in Sweden",
+    longDescription: "Central website for all AI Societies in Sweden",
+    date: "Nov, 2025",
+  },
+  {
     id: "new-notecards",
     title: "New NoteCards",
     image: "/projects/notecards.png",
