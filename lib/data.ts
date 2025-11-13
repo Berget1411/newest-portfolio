@@ -69,8 +69,9 @@ export const PROJECTS: Project[] = [
   {
     id: "new-notecards",
     title: "New NoteCards",
-    image: "/projects/notecards.png",
+    image: "/projects/notecards-new.png",
     github: "https://github.com/Berget1411/notecards",
+    demo: "https://notecards-landing.ludvig1411.workers.dev/",
     tech: [
       "Next.js",
       "TypeScript",
