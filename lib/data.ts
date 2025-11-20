@@ -1,4 +1,5 @@
 export type Project = {
+  isFeatured: boolean;
   id: string;
   title: string;
   image: string;
@@ -55,18 +56,21 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
-    id: "ais",
-    title: "AI Society Website",
-    image: "/projects/ai-society-website.png",
-    github: "https://github.com/kthaisociety/aisociety",
-    demo: "https://aisociety.se/",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+    isFeatured: true,
+    id: "lawline",
+    title: "Lawline AI",
+    image: "/projects/project_placeholder.png",
+    demo: "https://lawline.se/",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "AI", "Express.js"],
     devMode: false,
-    shortDescription: "Central website for all AI Societies in Sweden",
-    longDescription: "Central website for all AI Societies in Sweden",
-    date: "Nov, 2025",
+    shortDescription:
+      "Fullstack and AI consultant at Lawline, a Swedish platform that makes law simple and accessible. We have over 6.2 million annual users, 120,000+ handled legal questions, and 20+ years of experience.",
+    longDescription:
+      "Fullstack and AI consultant at Lawline, a Swedish platform that makes law simple and accessible. We have over 6.2 million annual users, 120,000+ handled legal questions, and 20+ years of experience",
+    date: "Current, 2025",
   },
   {
+    isFeatured: true,
     id: "new-notecards",
     title: "New NoteCards",
     image: "/projects/notecards-new.png",
@@ -95,6 +99,20 @@ export const PROJECTS: Project[] = [
     date: "Current, 2025",
   },
   {
+    isFeatured: false,
+    id: "ais",
+    title: "AI Society Website",
+    image: "/projects/ai-society-website.png",
+    github: "https://github.com/kthaisociety/aisociety",
+    demo: "https://aisociety.se/",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+    devMode: false,
+    shortDescription: "Central website for all AI Societies in Sweden",
+    longDescription: "Central website for all AI Societies in Sweden",
+    date: "Nov, 2025",
+  },
+  {
+    isFeatured: false,
     id: "tone",
     title: "Tone",
     image: "/projects/tone.png",
@@ -119,6 +137,7 @@ export const PROJECTS: Project[] = [
     date: "Jul 2025",
   },
   {
+    isFeatured: false,
     id: "smartpylogger",
     title: "SmartPyLogger",
     image: "/projects/smartpylogger.png",
@@ -141,6 +160,7 @@ export const PROJECTS: Project[] = [
     date: "June, 2025",
   },
   {
+    isFeatured: false,
     id: "Veyla",
     title: "Veyla",
     image: "/projects/veyla.png",
@@ -154,6 +174,7 @@ export const PROJECTS: Project[] = [
     date: "June, 2025",
   },
   {
+    isFeatured: false,
     id: "portfolio",
     image: "/projects/portfolio_screenshot.png",
     github: "https://github.com/ludvigbergstrom/ludvigbergstrom.com",
@@ -168,6 +189,7 @@ export const PROJECTS: Project[] = [
     date: "Jan, 2025",
   },
   {
+    isFeatured: false,
     id: "Andysolam",
     image: "/projects/andysolam.png",
     demo: "https://store.andysolam.com",
@@ -181,6 +203,7 @@ export const PROJECTS: Project[] = [
     date: "Current, 2025",
   },
   {
+    isFeatured: false,
     id: "e-commerce",
     image: "/projects/project_placeholder.png",
     github: "https://github.com/Berget1411/e-commerce",
@@ -202,6 +225,7 @@ export const PROJECTS: Project[] = [
     date: "Oct, 2024",
   },
   {
+    isFeatured: false,
     id: "ths",
     demo: "https://thsfuture.se/",
     image: "/projects/ths.png",
@@ -214,6 +238,7 @@ export const PROJECTS: Project[] = [
     date: "Current, 2025",
   },
   {
+    isFeatured: false,
     id: "kthais",
     demo: "https://kthais.com/",
     image: "/projects/kthais.png",
@@ -227,6 +252,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "notecards",
+    isFeatured: false,
     devMode: true,
     image: "/projects/notecards.png",
     demo: "https://preview--notecards-mindshare.lovable.app/",
@@ -248,6 +274,15 @@ export const PROJECTS: Project[] = [
 ];
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
+  {
+    id: "lawline",
+    title: "Lawline AI",
+    undertitle: "Fullstack and AI Consultant",
+    date: "Nov 2025 - Present",
+    desc1:
+      "Fullstack and AI consultant at Lawline, a Swedish platform that makes law simple and accessible. We have over 6.2 million annual users, 120,000+ handled legal questions, and 20+ years of experience.",
+    image: "/experience/lawline_logo.jpeg",
+  },
   {
     id: "kthais_vice_chairman",
     title: "KTH AI Society",
