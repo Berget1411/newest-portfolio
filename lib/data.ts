@@ -59,8 +59,8 @@ export const PROJECTS: Project[] = [
     isFeatured: true,
     id: "lawline",
     title: "Lawline AI",
-    image: "/projects/project_placeholder.png",
-    demo: "https://lawline.se/",
+    image: "/projects/lawline.png",
+    demo: "https://beta.ai.lawline.se/",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "AI", "Express.js"],
     devMode: false,
     shortDescription:
