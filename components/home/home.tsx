@@ -5,7 +5,7 @@ import { ProfessionalJourneySection } from "./sections/professional-journey/prof
 import { BlogSection } from "./sections/blog/blog-section";
 import { ConnectSection } from "./sections/connect/connect-section";
 
-export default function Personal() {
+export function Home() {
   return (
     <main className="space-y-24">
       <IntroSection />
@@ -16,3 +16,5 @@ export default function Personal() {
     </main>
   );
 }
+
+export default Home;
