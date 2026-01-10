@@ -71,6 +71,20 @@ export const PROJECTS: Project[] = [
   },
   {
     isFeatured: true,
+    id: "bergstrom",
+    title: "Bergstrom Consulting",
+    image: "/projects/consulting.png",
+    demo: "https://bergstrom-consulting.vercel.app/",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "AI", "Express.js"],
+    devMode: false,
+    shortDescription:
+      "Fullstack and AI consultant at Bergstrom Consulting, Designing and building software solutions for businesses and organizations.",
+    longDescription:
+      "Fullstack and AI consultant at Bergstrom Consulting, Designing and building software solutions for businesses and organizations.",
+    date: "Current, 2025",
+  },
+  {
+    isFeatured: true,
     id: "new-notecards",
     title: "New NoteCards",
     image: "/projects/notecards-new.png",
@@ -282,6 +296,15 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     desc1:
       "Fullstack and AI consultant at Lawline, a Swedish platform that makes law simple and accessible. We have over 6.2 million annual users, 120,000+ handled legal questions, and 20+ years of experience.",
     image: "/experience/lawline_logo.jpeg",
+  },
+  {
+    id: "bergstrom",
+    title: "Bergstrom Consulting",
+    undertitle: "Fullstack and AI Consultant",
+    date: "Jan 2026 - Present",
+    desc1:
+      "Fullstack and AI consultant at Bergstrom Consulting, Designing and building software solutions for businesses and organizations.",
+    image: "/experience/bergstrom-logo.png",
   },
   {
     id: "kthais_vice_chairman",
