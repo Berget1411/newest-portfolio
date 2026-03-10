@@ -84,7 +84,7 @@ export const PROJECTS: Project[] = [
     date: "Current, 2025",
   },
   {
-    isFeatured: true,
+    isFeatured: false,
     id: "new-notecards",
     title: "New NoteCards",
     image: "/projects/notecards-new.png",
@@ -111,6 +111,59 @@ export const PROJECTS: Project[] = [
     longDescription:
       "NoteCards is a comprehensive AI-powered flashcard application with seamless Notion integration, built using a modern monorepo architecture. The app leverages Next.js for the frontend with shadcn/ui components and Tailwind CSS for a polished UI. The backend utilizes Hono, a lightweight and performant server framework, with tRPC for end-to-end type-safe APIs. Data is managed through Drizzle ORM with PostgreSQL, while authentication is handled by Better-Auth. AI capabilities are powered by Mastra and Vercel AI SDK for intelligent flashcard generation. The project is optimized with Turborepo for efficient builds, uses Biome for linting and formatting, and is deployed on Cloudflare Workers for edge performance. Features include AI-driven flashcard creation, Notion workspace integration, and a developer-focused tech stack designed for scalability and type safety.",
     date: "Current, 2025",
+  },
+  {
+    isFeatured: true,
+    id: "open-clock",
+    title: "Open Clock",
+    image: "/projects/project_placeholder.png",
+    github: "https://github.com/Berget1411/open-clock",
+    tech: [
+      "TypeScript",
+      "TanStack Router",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Hono",
+      "tRPC",
+      "Cloudflare Workers",
+      "Drizzle ORM",
+      "PostgreSQL",
+      "Better-Auth",
+      "Turborepo",
+    ],
+    devMode: true,
+    shortDescription:
+      "Open-source time tracking app with project management, billable hours, tags, and analytics dashboard.",
+    longDescription:
+      "Open Clock is an open-source time tracking application built on a modern monorepo stack. It features a full time-tracker with projects, tags, and billable hours support, a reports page, and a rich analytics dashboard with bar and pie charts showing daily tracked time, project splits, and top activities. The frontend uses TanStack Router with file-based routing and shadcn/ui components on top of Tailwind CSS. The backend is powered by Hono with tRPC for end-to-end type-safe APIs, Drizzle ORM with PostgreSQL, and Better-Auth for authentication. Deployed on Cloudflare Workers via Alchemy with a Turborepo monorepo build system.",
+    date: "Mar, 2026",
+  },
+  {
+    isFeatured: true,
+    id: "open-learn",
+    title: "Open Learn",
+    image: "/projects/project_placeholder.png",
+    github: "https://github.com/Berget1411/open-learn",
+    tech: [
+      "TypeScript",
+      "TanStack Router",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Hono",
+      "tRPC",
+      "Cloudflare Workers",
+      "Drizzle ORM",
+      "PostgreSQL",
+      "Better-Auth",
+      "Polar.sh",
+      "Turborepo",
+    ],
+    devMode: true,
+    shortDescription:
+      "Open-source learning platform with AI assistant, todo management, and subscription billing via Polar.sh.",
+    longDescription:
+      "Open Learn is an open-source learning platform built on the same modern monorepo stack. It includes an AI assistant feature, todo management, and a subscription billing flow powered by Polar.sh — with free and Pro tiers and a customer portal for managing subscriptions. Authentication is handled by Better-Auth. The frontend uses TanStack Router with file-based routing and shadcn/ui on Tailwind CSS. The backend runs Hono with tRPC for fully type-safe APIs, Drizzle ORM with PostgreSQL, and is deployed to Cloudflare Workers via Alchemy in a Turborepo monorepo.",
+    date: "Mar, 2026",
   },
   {
     isFeatured: false,
