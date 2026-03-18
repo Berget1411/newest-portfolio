@@ -84,6 +84,20 @@ export const PROJECTS: Project[] = [
     date: "Current, 2025",
   },
   {
+    isFeatured: true,
+    id: "karnborg",
+    title: "Karnborg.com",
+    image: "/projects/karnborg.png",
+    demo: "https://karnborg.com/",
+    tech: ["UI/UX", "SEO", "Next.js", "TypeScript", "Tailwind CSS"],
+    devMode: false,
+    shortDescription:
+      "Author portfolio website for Ulrika Karnborg — Swedish author, dramatist, journalist, and critic.",
+    longDescription:
+      "Author portfolio website for Ulrika Karnborg, a Swedish author, dramatist, journalist, and critic. The site showcases her books, reviews, articles, and public work with an editorial dark-first aesthetic built on Next.js, Tailwind CSS, and shadcn/ui. Features oversized typography, strong black fields, red accents, and a literary gallery-style presentation that reflects Karnborg's established presence across Swedish literature and cultural life.",
+    date: "Mar, 2026",
+  },
+  {
     isFeatured: false,
     id: "new-notecards",
     title: "New NoteCards",
