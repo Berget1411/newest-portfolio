@@ -2,7 +2,6 @@
 import { motion } from "motion/react";
 import { TextEffect } from "@/components/ui/text-effect";
 import Link from "next/link";
-import Image from "next/image";
 
 export function Header() {
   return (
@@ -19,27 +18,6 @@ export function Header() {
       }}
       viewport={{ once: true, margin: "-50px" }}
     >
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        whileInView={{
-          opacity: 1,
-          scale: 1,
-          transition: {
-            duration: 0.5,
-            delay: 0.2,
-            ease: "easeOut",
-          },
-        }}
-        viewport={{ once: true, margin: "-50px" }}
-      >
-        <Image
-          src="/portrait.jpeg"
-          alt="Ludvig Bergström"
-          width={80}
-          height={80}
-          className="rounded-lg"
-        />
-      </motion.div>
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         whileInView={{
