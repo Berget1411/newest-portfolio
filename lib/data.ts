@@ -3,6 +3,8 @@ export type Project = {
   id: string;
   title: string;
   image: string;
+  imageDark?: string;
+  imageLight?: string;
   github?: string;
   demo?: string;
   tech: string[];
@@ -129,9 +131,12 @@ export const PROJECTS: Project[] = [
   {
     isFeatured: true,
     id: "open-clock",
-    title: "Open Clock",
-    image: "/projects/project_placeholder.png",
+    title: "Better Clock",
+    image: "/projects/better-clock-dark.png",
+    imageDark: "/projects/better-clock-dark.png",
+    imageLight: "/projects/better-clock-light.png",
     github: "https://github.com/Berget1411/open-clock",
+    demo: "https://open-clock-web-prod.ludvig1411.workers.dev/app",
     tech: [
       "TypeScript",
       "TanStack Router",
@@ -149,7 +154,7 @@ export const PROJECTS: Project[] = [
     shortDescription:
       "Open-source time tracking app with project management, billable hours, tags, and analytics dashboard.",
     longDescription:
-      "Open Clock is an open-source time tracking application built on a modern monorepo stack. It features a full time-tracker with projects, tags, and billable hours support, a reports page, and a rich analytics dashboard with bar and pie charts showing daily tracked time, project splits, and top activities. The frontend uses TanStack Router with file-based routing and shadcn/ui components on top of Tailwind CSS. The backend is powered by Hono with tRPC for end-to-end type-safe APIs, Drizzle ORM with PostgreSQL, and Better-Auth for authentication. Deployed on Cloudflare Workers via Alchemy with a Turborepo monorepo build system.",
+      "Better Clock is an open-source time tracking application built on a modern monorepo stack. It features a full time-tracker with projects, tags, and billable hours support, a reports page, and a rich analytics dashboard with bar and pie charts showing daily tracked time, project splits, and top activities. The frontend uses TanStack Router with file-based routing and shadcn/ui components on top of Tailwind CSS. The backend is powered by Hono with tRPC for end-to-end type-safe APIs, Drizzle ORM with PostgreSQL, and Better-Auth for authentication. Deployed on Cloudflare Workers via Alchemy with a Turborepo monorepo build system.",
     date: "Mar, 2026",
   },
   {

@@ -1,6 +1,7 @@
 import { XIcon, ExternalLinkIcon, GithubIcon } from "lucide-react";
 import { Project } from "@/lib/data";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 import {
   MorphingDialog,
   MorphingDialogTrigger,
@@ -16,6 +17,12 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
+  const { resolvedTheme } = useTheme();
+  const imageSrc =
+    resolvedTheme === "light"
+      ? (project.imageLight ?? project.image)
+      : (project.imageDark ?? project.image);
+
   return (
     <MorphingDialog
       transition={{
@@ -27,7 +34,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <MorphingDialogTrigger>
         <div className="aspect-video w-full cursor-pointer overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800">
           <Image
-            src={project.image}
+            src={imageSrc}
             alt={project.title}
             width={400}
             height={225}
@@ -53,7 +60,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             {/* Project Image */}
             <div className="overflow-hidden rounded-lg">
               <Image
-                src={project.image || "/placeholder_image.svg"}
+                src={imageSrc}
                 alt={project.title}
                 width={400}
                 height={225}
