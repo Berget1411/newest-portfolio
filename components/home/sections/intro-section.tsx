@@ -42,7 +42,7 @@ export function IntroSection() {
               <p className="text-zinc-600 dark:text-zinc-400">
                 Full-stack and AI developer, and Industrial Engineering &
                 Management student at KTH who is open for consulting gigs.
-                I&apos;m interested in software, applied AI and finance.
+                I&apos;m interested in software, design, applied AI and finance.
                 Currently exploring a modern{" "}
                 <Link
                   href="https://www.better-t-stack.dev/new?name=test-deploy&fe-w=next&rt=workers&db=postgres&sd=wrangler&dbs=neon&pay=polar&ex=ai,todo&add=biome,husky,turborepo&wd=wrangler"

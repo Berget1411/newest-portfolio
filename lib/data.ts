@@ -22,6 +22,7 @@ type WorkExperience = {
   desc1: string;
   desc2?: string;
   image: string;
+  imageDark?: string;
 };
 
 type Education = {
@@ -60,9 +61,9 @@ export const PROJECTS: Project[] = [
   {
     isFeatured: true,
     id: "lawline",
-    title: "Lawline AI",
+    title: "Lawline",
     image: "/projects/lawline.png",
-    demo: "https://beta.ai.lawline.se/",
+    demo: "https://lawline.se/",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "AI", "Express.js"],
     devMode: false,
     shortDescription:
@@ -74,15 +75,15 @@ export const PROJECTS: Project[] = [
   {
     isFeatured: true,
     id: "bergstrom",
-    title: "Bergstrom Consulting",
+    title: "Bergstrom Labs",
     image: "/projects/consulting.png",
     demo: "https://bergstrom-consulting.vercel.app/",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "AI", "Express.js"],
     devMode: false,
     shortDescription:
-      "Fullstack and AI consultant at Bergstrom Consulting, Designing and building software solutions for businesses and organizations.",
+      "Fullstack and AI consultant at Bergstrom Labs, Designing and building software solutions for businesses and organizations.",
     longDescription:
-      "Fullstack and AI consultant at Bergstrom Consulting, Designing and building software solutions for businesses and organizations.",
+      "Fullstack and AI consultant at Bergstrom Labs, Designing and building software solutions for businesses and organizations.",
     date: "Current, 2025",
   },
   {
@@ -100,35 +101,6 @@ export const PROJECTS: Project[] = [
     date: "Mar, 2026",
   },
   {
-    isFeatured: false,
-    id: "new-notecards",
-    title: "New NoteCards",
-    image: "/projects/notecards-new.png",
-    github: "https://github.com/Berget1411/notecards",
-    demo: "https://notecards-landing.ludvig1411.workers.dev/",
-    tech: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "shadcn/ui",
-      "Hono",
-      "tRPC",
-      "Cloudflare Workers",
-      "Drizzle ORM",
-      "PostgreSQL",
-      "Better-Auth",
-      "RAG and AI workflow with Vercel AI SDK",
-      "Turborepo",
-      "Biome",
-    ],
-    devMode: true,
-    shortDescription:
-      "AI-powered flashcard app with Notion integration, rebuilt with modern full-stack architecture",
-    longDescription:
-      "NoteCards is a comprehensive AI-powered flashcard application with seamless Notion integration, built using a modern monorepo architecture. The app leverages Next.js for the frontend with shadcn/ui components and Tailwind CSS for a polished UI. The backend utilizes Hono, a lightweight and performant server framework, with tRPC for end-to-end type-safe APIs. Data is managed through Drizzle ORM with PostgreSQL, while authentication is handled by Better-Auth. AI capabilities are powered by Mastra and Vercel AI SDK for intelligent flashcard generation. The project is optimized with Turborepo for efficient builds, uses Biome for linting and formatting, and is deployed on Cloudflare Workers for edge performance. Features include AI-driven flashcard creation, Notion workspace integration, and a developer-focused tech stack designed for scalability and type safety.",
-    date: "Current, 2025",
-  },
-  {
     isFeatured: true,
     id: "open-clock",
     title: "Better Clock",
@@ -136,7 +108,7 @@ export const PROJECTS: Project[] = [
     imageDark: "/projects/better-clock-dark.png",
     imageLight: "/projects/better-clock-light.png",
     github: "https://github.com/Berget1411/open-clock",
-    demo: "https://open-clock-web-prod.ludvig1411.workers.dev/app",
+    demo: "https://better-clock.bergstromlabs.com/",
     tech: [
       "TypeScript",
       "TanStack Router",
@@ -261,21 +233,6 @@ export const PROJECTS: Project[] = [
   },
   {
     isFeatured: false,
-    id: "portfolio",
-    image: "/projects/portfolio_screenshot.png",
-    github: "https://github.com/ludvigbergstrom/ludvigbergstrom.com",
-    demo: "https://ludvigbergstrom.com",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    devMode: false,
-    title: "Portfolio",
-    shortDescription:
-      "My website displaying my knowledge, experiences, tech-stack and a little about me.",
-    longDescription:
-      "A website that I built to display my knowledge, experiences, tech-stack and a little about me. Examples of technologies used are Next.js and Typescript for frontend, Tailwind CSS for styling and i18n for language support.",
-    date: "Jan, 2025",
-  },
-  {
-    isFeatured: false,
     id: "Andysolam",
     image: "/projects/andysolam.png",
     demo: "https://store.andysolam.com",
@@ -288,28 +245,7 @@ export const PROJECTS: Project[] = [
       "Working on an e-commerce website and main website for company managing Rust servers.",
     date: "Current, 2025",
   },
-  {
-    isFeatured: false,
-    id: "e-commerce",
-    image: "/projects/project_placeholder.png",
-    github: "https://github.com/Berget1411/e-commerce",
-    tech: [
-      "Next.js",
-      "Tailwind CSS",
-      "Express",
-      "MongoDB",
-      "Redis",
-      "Zustand",
-      "Stripe",
-    ],
-    devMode: false,
-    title: "E-commerce",
-    shortDescription:
-      "A fullstack e-commerce website with Stripe payment integration.",
-    longDescription:
-      "A fullstack e-commerce website with store page and admin dashboard. The website is built with technologies like Next.js, Tailwind CSS, TypeScript, Express, MongoDB, Redis and Stripe for payment integration.",
-    date: "Oct, 2024",
-  },
+ 
   {
     isFeatured: false,
     id: "ths",
@@ -371,12 +307,13 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   },
   {
     id: "bergstrom",
-    title: "Bergstrom Consulting",
+    title: "Bergstrom Labs",
     undertitle: "Fullstack and AI Consultant",
     date: "Jan 2026 - Present",
     desc1:
-      "Fullstack and AI consultant at Bergstrom Consulting, Designing and building software solutions for businesses and organizations.",
-    image: "/experience/bergstrom-logo.png",
+      "Fullstack and AI consultant at Bergstrom Labs, Designing and building software solutions for businesses and organizations.",
+    image: "/logo.svg",
+    imageDark: "/logo-dark.svg",
   },
   {
     id: "kthais_vice_chairman",

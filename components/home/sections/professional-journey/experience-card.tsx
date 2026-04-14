@@ -22,6 +22,7 @@ interface ExperienceItem {
   desc1: string;
   desc2?: string;
   image: string;
+  imageDark?: string;
 }
 
 interface ExperienceCardProps {
@@ -83,11 +84,21 @@ export function ExperienceCard({ item, index = 0 }: ExperienceCardProps) {
             />
             <div className="relative h-full w-full rounded-[15px] bg-white p-4 dark:bg-zinc-950">
               <div className="relative flex w-full flex-row items-start gap-4">
-                <MorphingDialogImage
-                  src={item.image}
-                  alt={`${item.title} logo`}
-                  className="h-12 w-12 flex-shrink-0 rounded-lg object-cover"
-                />
+                {item.imageDark ? (
+                  <div className="h-12 w-12 flex-shrink-0 rounded-lg bg-white p-1">
+                    <MorphingDialogImage
+                      src={item.image}
+                      alt={`${item.title} logo`}
+                      className="h-full w-full object-contain"
+                    />
+                  </div>
+                ) : (
+                  <MorphingDialogImage
+                    src={item.image}
+                    alt={`${item.title} logo`}
+                    className="h-12 w-12 flex-shrink-0 rounded-lg object-cover"
+                  />
+                )}
                 <div className="flex-1">
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
@@ -114,11 +125,21 @@ export function ExperienceCard({ item, index = 0 }: ExperienceCardProps) {
 
             <div className="p-6">
               <div className="mb-4 flex items-start gap-4">
-                <MorphingDialogImage
-                  src={item.image}
-                  alt={`${item.title} logo`}
-                  className="h-16 w-16 flex-shrink-0 rounded-xl object-cover"
-                />
+                {item.imageDark ? (
+                  <div className="h-16 w-16 flex-shrink-0 rounded-xl bg-white p-1.5">
+                    <MorphingDialogImage
+                      src={item.image}
+                      alt={`${item.title} logo`}
+                      className="h-full w-full object-contain"
+                    />
+                  </div>
+                ) : (
+                  <MorphingDialogImage
+                    src={item.image}
+                    alt={`${item.title} logo`}
+                    className="h-16 w-16 flex-shrink-0 rounded-xl object-cover"
+                  />
+                )}
                 <div className="flex-1">
                   <MorphingDialogTitle className="text-2xl font-semibold text-zinc-950 dark:text-zinc-50">
                     {item.undertitle}

@@ -2,6 +2,7 @@
 import { motion } from "motion/react";
 import { TextEffect } from "@/components/ui/text-effect";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Header() {
   return (
@@ -18,6 +19,35 @@ export function Header() {
       }}
       viewport={{ once: true, margin: "-50px" }}
     >
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: {
+            duration: 0.5,
+            delay: 0.2,
+            ease: "easeOut",
+          },
+        }}
+        viewport={{ once: true, margin: "-50px" }}
+        className="shrink-0"
+      >
+        <Image
+          src="/logo.svg"
+          alt="Logo"
+          width={40}
+          height={40}
+          className="block dark:hidden"
+        />
+        <Image
+          src="/logo-dark.svg"
+          alt="Logo"
+          width={40}
+          height={40}
+          className="hidden dark:block"
+        />
+      </motion.div>
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         whileInView={{
