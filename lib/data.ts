@@ -77,7 +77,7 @@ export const PROJECTS: Project[] = [
     id: "bergstrom",
     title: "Bergstrom Labs",
     image: "/projects/consulting.png",
-    demo: "https://bergstrom-consulting.vercel.app/",
+    demo: "https://bergstromlabs.com/",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "AI", "Express.js"],
     devMode: false,
     shortDescription:
